@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFont
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
 import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable
+import net.maui.game.screen.BaseScreen
 
 
 /**
@@ -68,7 +69,7 @@ abstract class BaseGame : Game() {
          * Used to switch screens while game is running.
          * Method is static to simplify usage.
          */
-        fun setActiveScreen(s: BaseScreen?) {
+        fun setActiveScreen(s: BaseScreen) {
             game.setScreen(s)
         }
     }
