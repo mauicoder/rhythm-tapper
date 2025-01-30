@@ -6,7 +6,7 @@ import net.maui.game.screen.RecorderScreen
 
 
 /** [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms. */
-class RhythmTapper(private val nativeFileChooser: NativeFileChooser) : BaseGame() {
+class RecorderTapper(private val nativeFileChooser: NativeFileChooser) : BaseGame() {
     override fun create() {
         super.create()
         setActiveScreen(RecorderScreen(nativeFileChooser))
